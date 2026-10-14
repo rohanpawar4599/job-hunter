@@ -1,0 +1,97 @@
+# Search terms sent to Adzuna
+keywords:
+  - "devops fresher"
+  - "devops intern"
+  - "junior devops engineer"
+  - "cloud engineer fresher"
+  - "cloud support engineer"
+  - "aws engineer fresher"
+  - "site reliability engineer intern"
+  - "kubernetes intern"
+
+max_days_old: 2
+
+# Job title must contain at least one of these
+title_must_include_any:
+  - devops
+  - cloud
+  - sre
+  - site reliability
+  - platform
+  - infrastructure
+  - aws
+  - kubernetes
+  - linux
+  - system admin
+  - build and release
+
+# Reject if the TITLE contains any of these
+exclude_title_words:
+  - senior
+  - "sr."
+  - lead
+  - manager
+  - principal
+  - architect
+  - director
+  - staff
+
+# Reject if the DESCRIPTION contains any of these (scam signals)
+scam_words:
+  - registration fee
+  - training fee
+  - security deposit
+  - pay for training
+  - placement fee
+
+# Reject if minimum experience required is this many years or more
+max_min_experience: 2
+
+# Bonus points for fresher-friendly wording
+fresher_words:
+  - fresher
+  - intern
+  - internship
+  - trainee
+  - entry level
+  - entry-level
+  - graduate
+  - "0-1"
+  - "0 - 1"
+
+# Your resume skills and their weights
+skills:
+  aws: 10
+  kubernetes: 10
+  docker: 10
+  terraform: 10
+  ci/cd: 8
+  github actions: 8
+  helm: 7
+  linux: 8
+  prometheus: 6
+  grafana: 6
+  python: 6
+  ec2: 4
+  s3: 4
+  iam: 4
+  vpc: 4
+  lambda: 4
+  rds: 3
+  git: 4
+  mysql: 3
+  cloudwatch: 3
+  jenkins: 3
+  ansible: 3
+  argocd: 5
+  gitops: 5
+  devsecops: 4
+
+min_score: 20
+max_alerts: 25
+
+# Company career boards (public APIs, safe to use)
+# Find a slug from the company's careers URL:
+#   boards.greenhouse.io/<slug>  OR  jobs.lever.co/<slug>
+greenhouse_companies: []   # e.g. ["companyslug1", "companyslug2"]
+lever_companies: []        # e.g. ["companyslug3"]

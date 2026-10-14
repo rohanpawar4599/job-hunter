@@ -1,0 +1,30 @@
+cat > .gitignore << 'EOF'
+# Credentials
+.env
+.env.local
+credentials.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+
+# Data files (optional)
+jobs_report.csv
+seen_jobs.json
+seen_jobs.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
+Thumbs.db
+EOF
+
+# Verify
+cat .gitignore
